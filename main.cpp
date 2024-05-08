@@ -316,7 +316,7 @@ void __stdcall hookD3D11DrawIndexedInstanced(ID3D11DeviceContext* pContext, UINT
 #define CT_Models (IndexCount == 8160 || IndexCount == 8898 || IndexCount == 10242 || IndexCount == 21495) 
 
 	//wallhack/chams
-	if (wallhack == 1 || chams == 1) //if wallhack or chams option is enabled in menu
+	if (wallhack == 1 || chams == 1 || teamchams == 1) //if wallhack or chams option is enabled in menu
 		if(debugName == "csgo_character.vfx_ps")//cs2 models
 		{
 			if (Stride != 28 && chams == 1)//body blue behind walls
